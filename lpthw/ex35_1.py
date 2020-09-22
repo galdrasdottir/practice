@@ -9,15 +9,8 @@ def shinies_stall():
 	next = input("> ")
 
 	if "bead" in next:
-		if "bead" in pockets:
-			print("The crow hops excitedly as you offer your bead.")
-			print("It rummages around its wares and eventually drops a piece of amber in front of you.")
-			print("Encased in its orange glow you see a fly.")
-			pockets.remove("bead")
-			pockets.insert(0, "amber")
-			return pockets
-		else:
-			print("You don't have", next, "in your pockets.")
+		tradebead()
+		market()
 	elif "rock" in next:
 		if "rock" in pockets:
 			print("The crow pecks at the rock a few times and then stops to think.")
@@ -26,11 +19,26 @@ def shinies_stall():
 			pockets.remove("rock")
 			pockets.insert(1, "sweet")
 			return pockets
+			market()
 		else:
 			print("You don't have", next, "in your pockets.")
+			market()
+
 	else:
 		fail("The crow is no longer interested in you.")
+		market()
 
+
+def tradebead():
+	if "bead" in pockets:
+		print("The crow hops excitedly as you offer your bead.")
+		print("It rummages around its wares and eventually drops a piece of amber in front of you.")
+		print("Encased in its orange glow you see a fly.")
+		pockets.remove("bead")
+		pockets.insert(0, "amber")
+		return pockets
+	else:
+		print("You can't trade with this.")
 
 
 
@@ -38,8 +46,9 @@ def checkpocket(passed_pocket):
 	print("You have", passed_pocket, "in your pocket.")
 
 def change_pockets():
-	checkpocket(shinies_stall())
+	local_pocket = 
+	checkpocket(local_pocket)
 
 print(pockets)
-change_pockets()
+shinies_stall()
 

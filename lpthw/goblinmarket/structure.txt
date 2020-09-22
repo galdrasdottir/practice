@@ -1,0 +1,32 @@
+A small game where the player visits a market and trades items from their pocket
+until they have completed their shopping list. The player can freely move between stalls
+and stallholders will react when they have the correct item in their inventory,
+but the player has to figure out what piece they are interested in.
+
+
+Consists of:
+
+a map with several stalls
+	- central square
+	- bakery (squirrel)
+	- vegetable stall (gnome)
+	- trinket stall (crow)
+	- magic toad
+	- goat
+
+movement enginge between places
+	- opening scene
+	- entering scenes
+	- exiting scenes
+	- dictionary of places
+
+inventory system
+	- check pockets
+	- stallholder react to items
+	- trading & changing contents
+
+
+Further ideas:
+- pull new inventory (and/or shopping list?) from a list for every play, several paths
+- item through player input with randomly assigned value
+

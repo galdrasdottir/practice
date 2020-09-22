@@ -16,6 +16,8 @@ options = {
 	}
 
 
+
+
 def shinies():
 	print("A crow is proudly guarding a large assortment of shiny things.")
 	print("It eyes you curiously as you approach and croaks a greeting.")
@@ -209,6 +211,7 @@ def stalls():
 	print("A twinkle of magic alerts you to a large toad sat on a leaf in the shade next to \na puddle.")
 	print("Which vendor are you interested in?")
 	next = input("> ")
+
 
 #call method with variable options, then
 	if next in options.keys():

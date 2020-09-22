@@ -4,6 +4,7 @@ def gold_room():
 	print("This room is full of gold. How much do you take?")
 
 	next = input("> ")
+	
 	if "0" in next or "1" in next:
 		how_much = int(next)
 	else:
@@ -57,7 +58,6 @@ def cthulhu_room():
 def dead(why):
 	print(why, "Good job!")
 	exit(0)
-
 
 def start():
 	print("You are in a dark room.")
